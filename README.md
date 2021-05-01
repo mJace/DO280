@@ -430,4 +430,4 @@ system:service-load-balancer-controller         /system:service-load-balancer-co
 
 #### generate signed certificate
 
-- openssl x509 -req -in `training.csr` -passin file:passphrase.txt -CA training-CA.pem -CAkey 
+- openssl x509 -req -in `training.csr` -passin file:passphrase.txt -CA training-CA.pem -CAkey training-CA.key -out training.crt -extfile training.ext
